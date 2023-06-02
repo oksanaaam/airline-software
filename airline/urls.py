@@ -1,6 +1,12 @@
-from django.urls import path
-from .views import create_airplanes
+from django.contrib import admin
+from django.urls import path, include
+from .views import AirplaneViewSet
+from rest_framework.routers import DefaultRouter
+
+router = DefaultRouter()
+router.register(r"airplanes", AirplaneViewSet)
 
 urlpatterns = [
-    path("airplanes/", create_airplanes, name="create_airplanes"),
+    path("admin/", admin.site.urls),
+    path("", include(router.urls)),
 ]
