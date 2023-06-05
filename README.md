@@ -21,16 +21,18 @@ python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
 ```
+![img.png](airline/img for README/img.png)
 The ZipAirlines software is now running and can be accessed at http://localhost:8000/api/airline/.
 
 
 ### Usage
 1. Open a web browser and go to http://localhost:8000 to access the ZipAirlines software.
-
+![img.png](airline/img for README/img_1.png)
 2. To input information about airplanes, click on the "Airplanes" link in the navigation menu.
+![img.png](airline/img for README/img_2.png)
 
 3. On the airplanes page, you can view a list of existing airplanes and their details. To add a new airplane, click on the "Add Airplane" button.
-
+![img_1.png](airline/img for README/img_3.png)
 4. Fill in the required fields for the new airplane, including the ID (a unique identifier for the airplane) and the number of passengers.
 
 5. Click the "Save" button to create the airplane. The software will automatically calculate the fuel tank capacity, fuel consumption per minute, and maximum minutes able to fly based on the provided information.
@@ -44,6 +46,7 @@ The ZipAirlines software is now running and can be accessed at http://localhost:
 ### API Documentation
 The ZipAirlines software also provides a RESTful API for managing airplanes. The API allows you to perform CRUD operations (Create, Read, Update, Delete) on the airplanes.
 
+![img.png](airline/img for README/img_4.png)
 API Endpoint: http://localhost:8000/api/airline/airplanes/
 
 Methods:
@@ -54,17 +57,6 @@ PUT: Updates the details of an existing airplane.
 DELETE: Deletes an existing airplane.
 Data Format: The API accepts and returns data in JSON format.
 
-### API Documentation
-The ZipAirlines software also provides a RESTful API for managing airplanes.
-
-API Endpoint: http://localhost:8000/api/airline/airplanes/
-
-Methods:
-
-GET: Retrieves the list of airplanes and their details.
-POST: Creates a new airplane with user-defined ID and passenger assumptions.
-
-Data Format: The API accepts and returns data in JSON format.
 
 Test Coverage : 98%
 You can check it 
