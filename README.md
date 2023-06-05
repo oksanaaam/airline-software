@@ -14,7 +14,14 @@ pip install -r requirements.txt
 ```
 
 
-### Set up the SQLite database and run server
+### Set up the SQLite database, the environment and run server
+Set the required environment variables in .env.sample file:
+```
+SECRET_KEY=<your SECRET_KEY>
+ALLOWED_HOSTS=<your ALLOWED_HOSTS>
+DEBUG = <your debug>
+```
+
 Run the database migrations to create the necessary tables in the SQLite database
 ```
 python manage.py makemigrations
